@@ -1,0 +1,30 @@
+package keyboard;
+
+import java.util.Scanner;
+
+public class Reverse {
+
+
+public static void main(String[] args) {
+
+	      int num=0;
+	      int reversenum =0;
+	      System.out.println("Input your number and press enter: ");
+	      //This statement will capture the user input
+	      Scanner input = new Scanner(System.in);
+	      //Captured input would be stored in number num
+	      num = input.nextInt(); //num=53
+	      //While Loop: Logic to find out the reverse number
+	      while( num != 0 )
+	      {
+	          reversenum = reversenum * 10;
+	          //reversenum=321
+	          reversenum = reversenum + num%10;
+	          //reversenum=321;
+	          num = num/10;
+	          //num=0
+	      }
+
+	      System.out.println("Reverse of input number is: "+reversenum);
+	   }
+	}
